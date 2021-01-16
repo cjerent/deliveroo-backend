@@ -449,6 +449,10 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 3200, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started");
+});
+
+app.all("*", (req, res) => {
+  res.status(404).send("Page introuvable");
 });
