@@ -410,7 +410,7 @@ app.get("/", (req, res) => {
               "https://deliveroo.fr/fr/menu/paris/3eme-temple/le-pain-quotidien-bretagne",
             title:
               "Pot-au-feu de légumes bio, quinoa bio & harissa bio (100% végétalien)",
-            description: "",
+            description: "lorem ipsum",
             price: "6.90",
             popular: true,
           },
