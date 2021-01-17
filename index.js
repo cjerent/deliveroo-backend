@@ -410,7 +410,7 @@ app.get("/", (req, res) => {
               "https://deliveroo.fr/fr/menu/paris/3eme-temple/le-pain-quotidien-bretagne",
             title:
               "Pot-au-feu de légumes bio, quinoa bio & harissa bio (100% végétalien)",
-            description: "lorem ipsum",
+            description: "",
             price: "6.90",
             popular: true,
           },
@@ -439,7 +439,20 @@ app.get("/", (req, res) => {
           },
         ],
       },
-      { name: "Sandwichs baguette", meals: [] },
+      {
+        name: "Sandwichs baguette",
+        meals: [
+          {
+            id: "1519055545-122",
+            "web-scraper-start-url":
+              "https://deliveroo.fr/fr/menu/paris/3eme-temple/le-pain-quotidien-bretagne",
+            title: "Le déjeuner du boulanger",
+            description:
+              "Demi-tartine du jour & soupe du jour aux légumes bio, servi avec du pain bio et une salade de jeunes pousses bio",
+            price: "6.90",
+          },
+        ],
+      },
       { name: "Desserts", meals: [] },
       { name: "Boissons fraîches", meals: [] },
       { name: "Epicerie bio", meals: [] },
